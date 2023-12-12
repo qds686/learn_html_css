@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- 
+  DOCTYPE（document type）： 文档类型
+    1.HTML文档声明，告诉浏览器当前页面是HTML5页面
+    2.让浏览器按照html5的规范来解析当前的文档。
+    3.如果不书写，会出现兼容问题
+    	+ 可以通过document.compatMode判断
+      	+ 加了HTML5文档声明的结果是：W3C标准模式CSS1Compat
+      	+ 没有加的结果是：浏览器怪异模式BackCompat
+    4.必须定义在 HTML 文档的第一行，在 HTML 标签之前
+    5.<!DOCTYPE html> 不是html标签，他只是一条浏览器的指令，在所有版本中，
+			这条指令对大小写都不敏感
+ -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    console.log(document.compatMode); // CSS1Compat / BackCompat
+  </script>
+</body>
+</html>
