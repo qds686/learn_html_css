@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      font-size: 32px;
+      font-weight: 700;
+      margin: 22px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    标签语义化：合理的标签做合理的事情
+
+    遵循标签语义化的好处：
+      + 利于SEO优化（也就是搜索引擎的抓取，搜索引擎的爬虫也依赖于标记来确定上下文和各个关键字的权重）；
+      + 在样式丢失的时候，还是可以比较好的呈现结构；
+      + 更好的支持各种终端，例如无障碍阅读和有声小说等；
+      + 利于团队开发和维护，W3C给我们定了一个标准，那么团队中都遵循这个标准，那么代码的差异就会缩小，在开发和维护的时候就可以提高效率
+    
+    日常工作中怎样遵循标签语义化：
+      + 尽量减少使用无意义标签，例如span和div；
+      + 尽量不使用标签本身的css属性，例如b、font、s等标签，如果需要这些样式，那么使用css样式来进行添加；
+      + 在需要强调的部分，使用strong、em，但是样式尽量使用css样式来描述；
+      + 列表搭建时，使用<ul>无序列表</ul> <ol>有序列表</ol> <dl>定义列表；
+   -->
+  <h1>我是h1元素</h1>
+  <p>我是p元素</p>
+
+  <!-- 用div模拟h1元素 -->
+  <div class="box">我也是div元素</div>
+</body>
+</html>
