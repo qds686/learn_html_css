@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      color: white;
+      background-color: #aaa;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 
+    文本所占据的高度就是div元素的高度 X
+    line-height是用来设置文本的最小行高
+    什么是行高？ ----》简单理解为 一行文字所占的高度
+
+    专业理解：两行文字基线之间的间距
+    基线（baseline）：小写字母x底部对齐的线
+
+    行距 = (line-height - font-size)/2 => 文本居中显示
+   -->
+  <!-- 
+    line-height的值有哪些？
+      + 具体数值+单位：line-height：30px；
+      + 百分比：line-height：150%； 是行高*字体大小 
+      + 直接写数值：line-height:1; 数值*字体大小
+      + normal：常规显示，浏览器基于字体调整一个合理值，范围在1-1.2
+      + em单位：line-height:2em; 2*字体大小
+
+    line-height和height的区别
+      + height指的是元素的整体高度
+      + line-height指的是一行文字所占据的高度 
+
+    line-height并不能决定文字的最终高度
+    -->
+  <div class="box">
+    我是div元素我是div元素我是div元素我是div元素我是div元素我是div元素我是div元素我是div元素
+  </div>
+</body>
+
+</html>

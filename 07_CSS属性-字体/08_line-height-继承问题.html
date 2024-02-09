@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box1 {
+      height: 100px;
+      background-color: hsl(339, 100%, 27%);
+      color: #fff;
+
+      /* 200% * 30px = 60px */
+      font-size: 30px;
+      line-height: 200%;
+    }
+
+    .box1 span {
+      background-color: pink;
+      /* 将具体的60px这个值继承下来 */
+      line-height: inherit;
+    }
+
+    .box2 {
+      height: 100px;
+      background-color: chartreuse;
+      color: #fff;
+
+      font-size: 30px;
+      /* 2 * 30px = 60px */
+      line-height: 2;
+    }
+
+    .box2 span {
+      font-size: 20px;
+      background-color: pink;
+      /* 将2这个值继承下来，所以结果是40px */
+      line-height: inherit;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1 box">333
+    <span>我是span</span>
+  </div>
+
+  <div class="box2 box">666
+    <span>我是span</span>
+  </div>
+
+</body>
+
+</html>
