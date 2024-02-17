@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .item::before {
+      /* content也可以显示图标(url)等 */
+      content: "123";
+      color: orange;
+    }
+
+    .item::after {
+      content: "321";
+      color: green;
+    }
+
+    /* 额外的补充:加一个8*8的盒子 */
+    .box3:after {
+      /* content: "nba"; */
+
+      /* 使用伪元素的过程中，不能省略content */
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: #f00;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1 item">我是box1</div>
+
+  <!-- 如果想给box2加伪元素只需要加类即可 -->
+  <div class="box2 item">我是box2</div>
+
+  <!-- 伪元素补充 -->
+  <div class="box3">我是box3</div>
+</body>
+
+</html>

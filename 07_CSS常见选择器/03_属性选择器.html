@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 拥有某个属性 */
+    [title] {
+      color: red;
+    }
+    /* 属性=某个值 */
+    [title=div] {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    [attr*=val]:属性值包含某个值val
+    [attr^=val]:属性值以val开头
+    [attr$=val]:属性值以val结尾
+    [attr|=val]:属性值等于val或者以val开头后面紧跟着连接符
+    [attr~=val]:属性值包含val，如果有其他值必须以空格和val分割
+   -->
+
+  <div>我是div元素</div>
+  <div title="div">我也是div元素</div>
+  <p>我是p元素</p>
+  <h2 title="h2">我是h2元素</h2>
+</body>
+</html>
