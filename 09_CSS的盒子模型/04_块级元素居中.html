@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+
+      /* inline-level box */
+      /* 行内级: 行内非替换元素span/a 行内替换元素 img input inline-block */
+      /* text-align: center; */
+    }
+
+    .container {
+      width: 800px;
+      height: 150px;
+      background-color: #0f0;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #f00;
+
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 
+    - 在水平方向上margin设置auto的时候，默认左右平分剩余空间，达到水平居中效果
+    - 当水平方向出现auto的时候，剩余空间会进行分配，当某一边不要 另外一边出现auto， 剩余空间就会直接给另外一边
+   -->
+  <div class="container">
+    <div class="box"></div>
+  </div>
+
+</body>
+
+</html>

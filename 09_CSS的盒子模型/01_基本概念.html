@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>margin基础</title>
+    <style>
+        .con1,.con2{
+            width: 200px;
+            height: 200px;
+        }
+        .con1{
+            background-color: #5df2ff;
+            /*margin-left: 100px;
+            margin-top: 80px;
+            margin-right: 30px;
+            margin-bottom: 40px;*/
+
+            /*margin: 80px 30px 40px 100px;*/
+            /*margin: 80px 50px 40px;*/
+            margin: 80px 50px;
+            margin: 50px;
+            border-radius: 0 50px 50px 100px;
+        }
+        .con2{
+            background-color: yellow;
+            padding: 20px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        margin 一般是用来设置兄弟元素之间的间距
+        padding一般是用来设置父子元素之间的间距
+     -->
+    <div class="con1">我是内容1</div>
+    <div class="con2">我是内容2</div>
+</body>
+</html>

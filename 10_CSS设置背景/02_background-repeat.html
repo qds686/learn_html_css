@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 800px;
+      height: 800px;
+      background-color: #f00;
+      background-image: url(../image/书.jpg);
+      /* 
+        设置图片是否平铺：background-repeat
+          repeat 平铺（默认值）
+          no-repeat 不平铺
+          repeat-x 只在水平方向平铺
+          repeat-y 只在垂直方向平铺
+
+          默认情况下，重复的图像被剪裁为元素的大小，但它们可以缩放 (使用 round) 或者均匀地分布 (使用 space).
+      */
+      background-repeat: round;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

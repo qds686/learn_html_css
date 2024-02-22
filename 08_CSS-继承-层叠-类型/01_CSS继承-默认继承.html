@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 
+      如果一个属性具备继承性，那么在该元素上设置后，它的后代元素都可以继承这个属性
+      如果后代元素自己有设置改属性，那么优先使用后代元素自己的属性
+      常见的font-size/font-family/font-weight/line-height/color/text-align都具有继承性
+    */
+    div.box {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>我是h1元素</h1>
+    <p>我是p元素</p>
+    <span>我是span元素</span>
+  </div>
+</body>
+</html>

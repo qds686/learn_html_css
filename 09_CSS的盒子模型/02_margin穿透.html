@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 大盒子没有设置padding-top 或者 border-top */
+    .parent {
+      width: 500px;
+      height: 300px;
+      background-color: lightblue;
+    }
+  	/* 左右是不会传递 */
+    .child {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      /* 直接给小盒子设置margin-top */
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 
+    场景：有一个大盒子里面包含小盒子，如果大盒子没有设置padding-top 或者是border-top，直接给小盒子设置margin-top，大盒子会跟着小盒子一起向下移动，这个现象就是margin值穿透问题。
+   -->
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+
+</body>
+
+</html>
