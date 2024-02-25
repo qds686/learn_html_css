@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 从1开始 */
+    /* ul li:nth-child(3){
+      color: red;
+    } */
+
+    /* 中间有其他元素的时候这个生效，nth-child不生效 */
+    /* ul li:nth-of-type(3){
+      color: red;
+    } */
+
+    /* 
+      n代表正整数和0
+      是父元素中的第偶数个子元素（第2、4、6、8...个）
+      跟:nth-child(even)同义
+
+      反之2n+1是奇数，与odd同义
+    */
+    ul li:nth-child(2n) {
+      color: green;
+    } 
+    ul li:nth-child(2n+1){
+      color: red;
+    }
+
+    /* 前几个 */
+    ul > li:nth-child(-n+3){
+      font-size: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <ul>
+    <li>列表元素1</li>
+    <li>列表元素2</li>
+    <li>列表元素3</li>
+    <li>列表元素4</li>
+    <li>列表元素5</li>
+    <li>列表元素6</li>
+  </ul>
+
+</body>
+</html>

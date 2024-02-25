@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #f00;
+
+      /* border: 30px solid orange; 
+      border-right-color: lightpink;
+      border-bottom-color: aqua;
+      border-left-color: blue; */
+
+      /* 上三角形 */
+      /* border: 50px solid orange;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      background-color: transparent; */
+      border: 50px solid transparent;
+      border-top-color: orange;
+      
+      /* 旋转成上三角形 */
+      /* 水平居中垂直25处的点进行旋转 */
+      transform-origin: center 25%;
+      transform: rotate(180reg);
+
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
