@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .text {
+      /* 相对定位 */
+      position: relative;
+      top: 20px;
+      left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    特点：
+      + 依然按照标准流布局
+      + 可以用top right bottom left进行定位
+      + 定位参照对象是元素自己原来的位置
+
+    相对定位的应用场景：
+      在不影响其他元素位置的前提下，对当前元素位置进行微调
+   -->
+  <span>我是span元素</span>
+  <strong class="text">我是strong元素</strong>
+  <img src="../image/夕阳.jpg" alt="">
+  <div>我是div元素</div>
+</body>
+</html>
