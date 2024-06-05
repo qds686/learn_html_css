@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      position: relative;
+      width: 1000px;
+      height: 800px;
+      background-color: #f00;
+    }
+
+    .box {
+      width: 800px;
+      height: 600px;
+      background-color: #0f0;
+    }
+
+    strong {
+      /* 脱离标准流，img会往前走 */
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 
+    绝对定位-absolute
+    1.元素脱离normal flow（脱离标准流、脱标）
+
+    2.可以通过left。right、bottom进行定位
+      + 定位参照对象是最临近的祖先元素
+      + 如果找不到这样的祖先元素，参照对象是视口
+
+    3.定位元素（positioned element）
+      + position值不为static的元素
+      + 也就是position的值为relative、absolute、fixed的元素
+   -->
+
+  <div class="container">
+    <div class="box">
+      <span>我是span元素</span>
+      <strong>我是strong元素</strong>
+      <img src="../image/湖面.jpg" alt="">
+      <div>我是div元素</div>
+    </div>
+  </div>
+
+</body>
+
+</html>

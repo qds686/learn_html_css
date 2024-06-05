@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 800px;
+      height: 500px;
+      background-color: #f00;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: #0f0;
+
+      /**
+       * 其中的原理：container box width = box width + margin-left + margin-right
+       * 其中包含块的宽度是800px，盒子的宽度是200px，因为左右的margin设置为auto，所以margin-left 和 margin-right自动平均分配300px
+
+       tip：不管包含块是否有宽度
+       */
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 让一个块级元素在包含块中居中 -->
+  <div class="container">
+    <div class="box"></div>
+  </div>
+
+</body>
+
+</html>

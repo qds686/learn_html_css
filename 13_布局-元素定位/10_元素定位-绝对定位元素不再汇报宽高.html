@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      background-color: #f00;
+    }
+
+    /* 
+      刚开始box的高度由strong撑起来，
+      当strong脱标的时候，就不再属于box，box就没有高度了 
+    */
+    .box strong {
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 绝对元素不再给父元素汇报宽高数据 -->
+
+  <div class="box">
+    <strong>我是strong元素</strong>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .container {
+      position: relative;
+      width: 600px;
+      height: 600px;
+      background-color: chocolate;
+    }
+
+    .container .box {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 400px;
+      height: 400px;
+      background-color: limegreen;
+    }
+
+    img {
+      width: 80px;
+    }
+
+    /* 定位元素可以给行内非替换元素设置宽高 */
+    strong {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: #fff;
+      width: 200px;
+      height: 60px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 
+    绝对定位元素：将position设置为absolute、fixed元素
+
+    绝对定位元素的特点：
+    1.可以随意设置宽高
+    2.如果没有设置宽高，宽高默认由内容决定
+    3.不再受标准流的约束
+      + 不再严格按照从上到下、从左到右排布
+      + 不再严格区分块级(block)、行内级(inline)、行内块级(inline-block)，很多特性都会消失
+    4.不再给父元素汇报宽高数据
+    5.脱标元素内部默认还是按照标准流布局
+      绝对定位元素strong内部还是按照标准流排布
+   -->
+  <div class="container">
+    <div class="box">
+      <span>我是span元素</span>
+      <strong>我是strong元素</strong>
+      <img src="../image/水果.jpg" alt="">
+      <div>我是div元素</div>
+    </div>
+  </div>
+</body>
+
+</html>

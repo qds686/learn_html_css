@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      position: relative;
+      width: 800px;
+      height: 500px;
+      background-color: #f00;
+    }
+
+    .box {
+      position: absolute;
+      left: 0;
+      right: 0;
+      /* width: 200px; */
+      /* 
+        绝对定位元素居中原理：
+          + 父盒子宽度 = 子盒子宽度 + left + right + margin-left + margin-right
+          + 800 = atuo + 0 + 0 + 0 + 0，此时浏览器自动给盒子分配宽度为800占满包含块的宽度
+
+      不设置right为0，直接设置width为100%也可以实现
+      */
+      height: 200px;
+      background-color: #0f0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 没有宽度的盒子在包含块中居中 无宽度的绝对定位子元素在包含块中占满父元素宽度-->
+  <div class="container">
+    <div class="box"></div>
+  </div>
+
+</body>
+
+</html>

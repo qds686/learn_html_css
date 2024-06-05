@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      position: relative;
+      width: 800px;
+      height: 500px;
+      background-color: #f00;
+    }
+
+    /* 
+      父w = 子w + l + r + ml + mr
+      父h = 子h + t + b + mt + mb
+      子元素的宽高没有设置，默认为auto，left right margin 均为0
+    */
+    .box {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: #0f0;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 让定位元素和父元素的宽高一样 -->
+  <div class="container">
+    <div class="box"></div>
+  </div>
+
+</body>
+
+</html>

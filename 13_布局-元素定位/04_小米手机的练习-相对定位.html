@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .box {
+      height: 720px;
+      background-color: red;
+      overflow: hidden;
+    }
+
+    img {
+      position: relative;
+      /* 图片宽度的一半 */
+      /* left: -1226px; */
+
+      /* 优化：自动计算图片的一半 */
+      transform: translate(-50%);
+
+      /* 百分比相对于包含块box */
+      margin-left: 50%;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <!-- 
+      图片相对定位，向左移图片的一半（此时图片中点和box左侧对齐），然后向右移动box的一半即可
+   -->
+  <div class="box">
+    <img src="../image/小米手机.png" alt="">
+  </div>
+
+</body>
+</html>

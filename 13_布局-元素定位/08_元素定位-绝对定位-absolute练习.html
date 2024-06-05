@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .container {
+      position: relative;
+      width: 600px;
+      height: 600px;
+      background-color: chocolate;
+    }
+
+    .container .box {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 400px;
+      height: 400px;
+      background-color: limegreen;
+    }
+
+    img {
+      width: 80px;
+    }
+
+    strong {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <!-- box在container的右下角，strong在box的左下角 -->
+  <div class="container">
+    <div class="box">
+      <span>我是span元素</span>
+      <strong>我是strong元素</strong>
+      <img src="../image/水果.jpg" alt="">
+      <div>我是div元素</div>
+    </div>
+  </div>
+</body>
+</html>

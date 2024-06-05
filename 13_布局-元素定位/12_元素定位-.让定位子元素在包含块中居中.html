@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      position: relative;
+      width: 800px;
+      height: 500px;
+      background-color: #f00;
+    }
+
+    /* 
+      父盒子宽度 = 子盒子宽度 + left + right + ml + mr
+      => 800 = 200 + 0 + 0 + auto + auto，子盒子200，剩余600，水平margin平均分配即可居中
+    */
+    .box {
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 200px;
+      height: 200px;
+      background-color: #0f0;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 让定位子元素在包含块中居中 -->
+  <div class="container">
+    <div class="box"></div>
+  </div>
+
+</body>
+
+</html>
