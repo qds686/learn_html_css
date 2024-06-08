@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 50px auto;
+      background-color: orange;
+    }
+
+    .item1,
+    .item2 {
+      background-color: #f00;
+    }
+
+    .item1 {
+      /* 脱离标准流 */
+      /* 
+        元素一旦浮动后，脱离标准流，定位元素会层叠在浮动元素上面
+        元素向左或向右浮动，浮动元素的边界不能超出包含块的边界
+      */
+      float: left;
+      background-color: #0f0;
+    }
+
+    .item2 {
+      float: right;
+    }
+
+    .item3 {
+      position: absolute;
+      left: 20px;
+      top: 10px;
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="item1">浮动1</div>
+    <div class="item2">浮动2</div>
+    <div class="item3">定位元素</div>
+  </div>
+</body>
+
+</html>

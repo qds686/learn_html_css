@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 500px;
+      height: 500px;
+      background-color: orange;
+    }
+
+    .item1,
+    .item2,
+    .item3 {
+      float: left;
+      width: 100px;
+      height: 100px;
+      background-color: #008c8c;
+    }
+
+    .item4 {
+      float: left;
+      width: 250px;
+      height: 100px;
+      color: red;
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <!--  浮动元素之间不能层叠，只能在后面或者超出则向下移动 -->
+  <div class="container">
+    <div class="item1">item1</div>
+    <div class="item2">item2</div>
+    <div class="item3">item3</div>
+    <div class="item4">item4</div>
+  </div>
+</body>
+
+</html>
