@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .content {
+      width: 400px;
+      height: 400px;
+      background-color: orange;
+    }
+
+    .item {
+      width: 100px;
+      height: 100px;
+      float: left;
+      background-color: green;
+    }
+
+    .item5 {
+      width: 500px;
+      /* 
+      一般不设置高度
+      height: 10px;
+      background-color: red;
+      */
+      clear: both;
+    }
+
+    .clearFix:after {
+      /*  必须拥有content属性 内容为空  */
+      content: "";
+      /*   必须块标签才能清浮动  */
+      display: block;
+      /* 清除浮动 */
+      clear: both;
+
+      /* 浏览器兼容性，高度为0 不占用空间 */
+      height: 0;
+      /* 浏览器兼容性 隐藏*/
+      visibility: hidden;
+    }
+
+    .clearFix {
+      /* 兼容ie6/7 不进行缩放*/
+      *zoom: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 
+    给content盒子没有设置高度，
+      + 子元素item浮动，脱离文档流不会给content汇报高度
+      + 父元素计算高度的时候，不会计算浮动子元素的高度，导致了高度塌陷的问题
+      + 解决：给父级盒子加高度即可
+    
+    解决高度塌陷的方法
+      + 给父元素加高度
+      + 最后一个元素加一个item 设置clear:both，放到浮动元素的下面
+      + 清浮动
+      + 父元素BFC
+  -->
+  <div class="content clearFix">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item5"></div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .content {
+      width: 1100px;
+      height: 800px;
+      margin: 0 auto;
+      padding: 50px 0;
+      background-color: #ccc;
+    }
+
+    .box {
+      height: 167px;
+    }
+
+    .item {
+      width: 221px;
+      height: 167px;
+      background-color: green;
+      float: left;
+
+      /* 因为向左移动一像素，右边会有空隙，给每个item宽度加1，使每个item占据的空间为220 */
+      margin-left: -1px;
+      box-sizing: border-box;
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 
+    1.边框给谁加
+    2.加上边框宽度如何计算
+    3.margin负值如何使用
+  -->
+  <div class="content">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+</body>
+
+</html>

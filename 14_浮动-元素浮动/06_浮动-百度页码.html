@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #ccc;
+    }
+
+    .page {
+      height: 100px;
+      padding: 20px;
+      background-color: #ccc;
+      box-sizing: border-box;
+    }
+
+    .page a {
+      display: block;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      margin-right: 12px;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #3951b3;
+      float: left;
+      cursor: pointer;
+    }
+
+    .page a:last-child {
+      width: 80px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+    }
+
+    .page a.active {
+      color: #fff;
+      background-color: #4e6ef2;
+    }
+
+    .page a:hover {
+      color: #fff;
+      background-color: #4e6ef2;
+    }
+    
+  </style>
 </head>
+
 <body>
-  
+
+  <div class="page">
+    <a href="#" class="active">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">7</a>
+    <a href="#">8</a>
+    <a href="#">9</a>
+    <a href="#">10</a>
+    <a href="#">下一页&gt;</a>
+  </div>
+
 </body>
+
 </html>
