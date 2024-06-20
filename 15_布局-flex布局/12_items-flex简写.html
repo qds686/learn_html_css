@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 500px;
+      height: 500px;
+      background-color: orange;
+      display: flex;
+    }
+
+    .item {
+      width: 120px;
+      height: 120px;
+    }
+
+    /* 
+      flex属性 
+        none | [flex-grow | flex-shrink? | flex-basis ] | auto
+        none: 0 0 auto
+        auto: 1 1 auto
+        一个值：无单位grow，有单位basis
+        两个值：第一个为grow，第二个值：无单位shrink  有单位basis
+        三个值：grow shrink basis
+    */
+
+    .item2 {
+      flex: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+  </div>
+
+  <script src="./js/随机颜色.js"></script>
+</body>
+
+</html>

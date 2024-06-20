@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      /* 
+        弹性盒子是一种用于按行或按列布局元素的一维布局方法
+        flex有两个属性 flex / inline-flex
+          + flex 以block的形式显示
+          + inline-flex 以inline的形式显示
+        设为 Flex 布局以后，
+          + 父级盒子变为flex-container，子元素都是父元素的项目flex-item
+          + 默认flex-item水平排布
+          + 子元素的float和vertical-align属性将失效
+          + 子元素不再严格区分块级元素和行内级元素，父元素依旧区分
+          + 子元素受外层弹性盒子属性控制
+          + 子元素默认情况下是包裹内容的，但是可以设置宽度和高度
+      */
+
+      /* 
+      printf：
+        aaa
+        123
+        bbb
+      */
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+
+  aaa
+  <div class="box">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  bbb
+</body>
+</html>

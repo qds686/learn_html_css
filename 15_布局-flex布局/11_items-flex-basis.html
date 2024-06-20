@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 500px;
+      height: 500px;
+      background-color: orange;
+      display: flex;
+    }
+
+    /* 
+      flex-basis 用来设置flex items在主轴方向上的“基础尺寸”
+        + 默认值auto，也可以为具体值100px
+        + 优先级：min-width... > flex-basis > width > 本身大小
+
+      如果内容是文字，两者都一样会换行
+      如果内容是很长的单词，设置width就会超出，超出的部分不会显示，设置flex-basis，如果一个单词很长，就会扩展宽度来显示完整
+    */
+    .item {
+      /* width: 120px; */
+      flex-basis: 120px;
+      height: 120px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item1">1</div>
+    <!-- <div class="item item2">我是盒子，一个很大的盒子</div> -->
+    <div class="item item2">I'm_hezi_hhh_hhhppppp</div>
+    <div class="item item3">3</div>
+  </div>
+
+  <script src="./js/随机颜色.js"></script>
+</body>
+
+</html>

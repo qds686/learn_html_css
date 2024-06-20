@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 500px;
+      height: 500px;
+      background-color: orange;
+
+      display: flex;
+      /* 
+        align-items 决定了子元素在交叉轴上的对齐方式
+          + mormal：默认值，在弹性布局中，效果和stretch一样
+          + stretch：当flex items在交叉轴方向的大小为auto时，会自动拉伸值填充flex container
+          + flex-start：与交叉轴start对齐 item顶部与start对齐
+          + flex-end： 与交叉轴end对齐 item底部与end对齐
+          + center：居中对齐  item中间与center对齐
+          + baseline：与基线对齐
+      */
+      align-items: baseline;
+    }
+
+    .item {
+      width: 120px;
+      height: 120px;
+    }
+
+    .item1 {
+      /* height: auto; */
+      font-size: 18px;
+      height: 100px;
+    }
+
+    .item2 {
+      font-size: 20px;
+      height: 120px;
+    }
+
+    .item3 {
+      font-size: 12px;
+      height: 140px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+  </div>
+
+  <script src="./js/随机颜色.js"></script>
+</body>
+
+</html>
