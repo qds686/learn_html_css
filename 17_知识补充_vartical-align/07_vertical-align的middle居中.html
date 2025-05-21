@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      background-color: orange;
+      height: 300px;
+      /* 2.设置的是一行文本的高度 这种看上去在盒子里居中了*/
+      line-height: 300px;
+    }
+    .box img {
+      width: 200px;
+      /* 1.在行盒中和x的一半对齐，并没有在整个盒子中居中 */
+      vertical-align: middle;
+    }
+    .box .small {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background-color: #f00;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    我是普通文本xxx
+    <img src="../images/kobe01.jpg" alt="">
+  </div>
+</body>
+</html>

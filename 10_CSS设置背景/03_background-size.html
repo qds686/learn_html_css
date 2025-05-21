@@ -13,17 +13,21 @@
       background-repeat: no-repeat;
       /* 
         设置背景图片的大小
+          初始值：auto，auto 不继承
           @1关键字：
             cover 图片的比例不变，将元素铺满
             contain 图片比例不变，将图片在元素中完整显示
           @2一个值：这个值指定图片的宽度，图片的高度隐式的为 auto
           @3二个值第一个值指定图片的宽度，第二个值指定图片的高度
           @4逗号分隔的多个值：设置多重背景
-          @5百分比，相对于背景区
+          @5百分比，相对于背景区(由background-origin决定)
+            + 如果attachment 为fixed，背景区为浏览器可视区（即视口），不包括滚动条。不能为负值。
       */
+       /* background-size: cover; */
+       /* background-size: contain; */
+       /* background-size: 300px; */
       /* background-size: 300px 300px; */
-      /* background-size: cover; */
-      background-size: contain;
+      background-size: 300px;
     }
   </style>
 </head>

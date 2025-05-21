@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      background-color: orange;
+    }
+    .box img {
+      width: 200px;
+      /* vertical-align: top; */
+    }
+    .box .small {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background-color: #f00;
+
+      margin-bottom: 10px;
+      vertical-align: top;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    默认是基线对齐
+    vertical-align给行内级的元素上面来设置
+    有margin-bottom的时候基线会下移
+    有文本则除了图片其他基线对齐即可
+   -->
+  <div class="box">
+    普通的文本xxx
+    <img src="../images/kobe01.jpg" alt="">
+    <span class="small">xxx房间诶钢结构件djie</span>xxx
+  </div>
+
+</body>
+</html>

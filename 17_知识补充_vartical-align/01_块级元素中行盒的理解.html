@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 
+    当前box有没有高度：会有高度
+    为什么有高度：由内容撑起来
+    本质：内容的行高撑起来
+    */
+    .box {
+      background-color: orange;
+    }
+
+    .small {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background-color: #f00;
+    }
+  </style>
+</head>
+<body>
+  <!--
+    行盒：inline box
+    作用：将当前行里面所有的内容全部包裹在一起
+  -->
+  <div class="box">
+    我是div元素<span class="small"></span>
+    中国人民大学中国资本市场研究院联席院长赵锡军说，过去有时会出现制造业PMI高于50%，但中小企业表现不佳的状况。如今，大、中、小型企业PMI均处于扩张区间，表明各类经营主体生产经营都在稳步恢复。
+  </div>
+</body>
+</html>

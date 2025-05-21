@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .item {
+      width: 200px;
+      height: 200px;
+      padding: 10px;
+      border: 1px solid #070;
+    }
+
+    /* box-sizing用来设置盒子模型中宽高的行为 */
+    /* 设置默认值content-box，元素实际宽度是内容width+padding+border，而且设置padding或者border盒子会被撑大 */
+    .box1 {
+      background-color: red;
+      box-sizing: content-box;
+    }
+
+    /* 设置宽高包括盒子的border和padding，不会把盒子撑大，元素实际占用宽度就是width */
+    .box2 {
+      background-color: orange;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1 item">我是文本</div>
+  <div class="box2 item">我是文本</div>
+</body>
+
+</html>

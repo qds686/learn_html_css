@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    /* 
+      background-position CSS 属性为每一个背景图片设置初始位置
+      这个位置是相对于由 background-origin 定义的位置图层的
+      写一个，第二个默认值是center
+      初始值：0%,0% 不继承
+    */
     .box{
       width: 800px;
       height: 800px;
@@ -12,13 +18,12 @@
       background-image: url(../image/书.jpg);
       background-repeat: no-repeat;
 
-      /* 
-        设置背景位置：background-position
-      */
-      background-position: 100px 100px;
-      background-position: 100px center;
+      /* 设置背景位置：background-position */
+      /* background-position: 100px 100px; */
+      /* background-position: 100px center; */
+
       /* 浏览器缩放，一直在中间显示 */
-      background-position: center;
+      /* background-position: center; */
       background-position: top;
     }
   </style>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      background-color: orange;
+    }
+
+    .box img {
+      width: 200px;
+    }
+
+    .box .small {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background-color: #f00;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    当一个inline-box中有文本时，它的基线不再是底部，基线变成最后一行文本的基线
+   -->
+  <div class="box">
+    我是普通的文本，355ffdgsge7989xxxx
+    <img src="../images/kobe01.jpg" alt="">
+
+    <span class="small">aaa发件地更非结构IE结果IE</span>
+  </div>
+</body>
+</html>
